@@ -4,7 +4,7 @@
         {
             "label": "Preprocess",
             "type": "shell",
-            "command": "C:\\tools\\AmnesiaPreprocessor\\AmnesiaPreprocessor.exe '-cs:${workspaceFolder}'",
+            "command": "C:\\tools\\AmnesiaPreprocessor\\AmnesiaPreprocessor.exe -cs:${workspaceFolder}",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -13,7 +13,7 @@
         {
             "label": "Preprocess-Silent",
             "type": "shell",
-            "command": "C:\\tools\\AmnesiaPreprocessor\\AmnesiaPreprocessor.exe '-cs:${workspaceFolder}'",
+            "command": "C:\\tools\\AmnesiaPreprocessor\\AmnesiaPreprocessor.exe -cs:${workspaceFolder}",
             "presentation": {
                 "reveal": "never"
             }
