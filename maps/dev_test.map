@@ -5,7 +5,7 @@
             <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="1.97468 1.57622 -1.96629" CameraTarget="3.42936 1 -1.82208" CameraZoom="3.46013" GridHeight="1" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="0.541893 3.12298 -2.31625" CameraTarget="2.67573 1 -1.3407" CameraZoom="2.76013" GridHeight="1" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -47,7 +47,7 @@
                         <Var Name="IsAffectedByDecal" Value="true" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="1" Group="0" ID="6" Name="arabic_carafe_1" Rotation="2.17129 -0.255531 1.8338" Scale="1 1 1" Tag="" WorldPos="3.20707 1.1567 -1.97123">
+                <Entity Active="true" FileIndex="1" Group="0" ID="6" Name="Item_1" Rotation="2.17129 -0.255531 1.8338" Scale="1 1 1" Tag="" WorldPos="3.20707 1.1567 -1.97123">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -63,7 +63,17 @@
                         <Var Name="CustomSubItemTypeName" Value="" />
                     </UserVariables>
                 </Entity>
-                <Area Active="true" AreaType="Script" Group="0" ID="7" Mesh="" Name="WagonItemArea" Rotation="0 -0 0" Scale="1.23511 1.03498 2.24343" Tag="" WorldPos="3.26678 1.51749 0.253871">
+                <Area Active="true" AreaType="Script" Group="0" ID="7" Mesh="" Name="ItemArea" Rotation="0 -0 0" Scale="1.23511 1.03498 2.24343" Tag="" WorldPos="3.26678 1.51749 0.253871">
+                    <UserVariables>
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ItemInteraction" Value="true" />
+                        <Var Name="MaxFocusDistance" Value="-1" />
+                    </UserVariables>
+                </Area>
+                <Area Active="true" AreaType="Script" Group="0" ID="8" Mesh="" Name="ItemSlot_1" Rotation="0 -0 0" Scale="0.16572 0.16572 0.16572" Tag="" WorldPos="3.23276 1.06691 -0.0690495">
                     <UserVariables>
                         <Var Name="PlayerLookAtCallback" Value="" />
                         <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />

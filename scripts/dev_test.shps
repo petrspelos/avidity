@@ -1,0 +1,14 @@
+void OnEnter()
+{
+    AddUseItemCallback("test", "Item_1", "ItemArea", "PlaceItem", true);
+}
+
+void PlaceItem(string item, string entity)
+{
+    RemoveItem(item);
+    CreateEntityAtArea("PlacedItem_1", "arabic_carafe.ent", "ItemSlot_1", true);
+    SetPropStaticPhysics("PlacedItem_1", true);
+    CreateParticleSystemAtEntity("dust", "ps_dust_impact.ps", "ItemSlot_1", false);
+    PlayGuiSound("15_puzzle_hole.ogg", 1.0f);
+    StartScreenShake(0.01f, 0.2f, 0.05f, 0.05f);
+}
