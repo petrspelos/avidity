@@ -1,0 +1,29 @@
+#include "utilities.ihps"
+
+void OnEnter()
+{
+    ForeachEntity("Item_A_", "RegisterCollectableCarafe");
+}
+
+void RegisterCollectableCarafe(string entity)
+{
+    AddUseItemCallback("", entity, "ItemArea", "PlaceCarafe", true);
+}
+
+void PlaceCarafe(string item, string entity)
+{
+    RemoveItem(item);
+    PlaceItemToWagon("arabic_carafe.ent");
+}
+
+void PlaceItemToWagon(string entityFile)
+{
+    AddLocalVarInt("NextItemNumber", 1);
+    string itemName = "PlacedItem_" + GetLocalVarInt("NextItemNumber");
+    string slotName = "ItemSlot_" + GetLocalVarInt("NextItemNumber");
+    CreateEntityAtArea(itemName, entityFile, slotName, true);
+    SetPropStaticPhysics(itemName, true);
+    CreateParticleSystemAtEntity("dust", "ps_dust_impact.ps", slotName, false);
+    PlayGuiSound("15_puzzle_hole.ogg", 1.0f);
+    StartScreenShake(0.01f, 0.2f, 0.05f, 0.05f);
+}

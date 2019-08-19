@@ -1,0 +1,9 @@
+void ForeachEntity(string prefix, string callback)
+{
+    int iterator = 1;
+    while(GetEntityExists(prefix + iterator))
+    {
+        AddTimer(prefix + iterator, 0.0f, callback);
+        iterator++;
+    }
+}
