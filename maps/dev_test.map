@@ -5,7 +5,7 @@
             <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="0.541893 3.12298 -2.31625" CameraTarget="2.67573 1 -1.3407" CameraZoom="2.76013" GridHeight="1" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="1.28783 2.67414 0.205361" CameraTarget="2.92834 1 0.178795" CameraZoom="3.06013" GridHeight="1" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -73,7 +73,59 @@
                         <Var Name="MaxFocusDistance" Value="-1" />
                     </UserVariables>
                 </Area>
-                <Area Active="true" AreaType="Script" Group="0" ID="8" Mesh="" Name="ItemSlot_1" Rotation="0 -0 0" Scale="0.16572 0.16572 0.16572" Tag="" WorldPos="3.23276 1.06691 -0.0690495">
+                <Area Active="true" AreaType="Script" Group="0" ID="8" Mesh="" Name="ItemSlot_1" Rotation="0 -0 0" Scale="0.16572 0.16572 0.16572" Tag="" WorldPos="3.23276 1.06691 -0.391201">
+                    <UserVariables>
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ItemInteraction" Value="false" />
+                        <Var Name="MaxFocusDistance" Value="-1" />
+                    </UserVariables>
+                </Area>
+                <Entity Active="true" FileIndex="1" Group="0" ID="12" Name="Item_2" Rotation="2.17129 -0.255531 1.8338" Scale="1 1 1" Tag="" WorldPos="3.20707 1.1567 -2.53293">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="CustomSubItemTypeName" Value="" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="1" Group="0" ID="13" Name="Item_3" Rotation="2.17129 -0.255531 1.8338" Scale="1 1 1" Tag="" WorldPos="3.20707 1.1567 -1.43874">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="CustomSubItemTypeName" Value="" />
+                    </UserVariables>
+                </Entity>
+                <Area Active="true" AreaType="Script" Group="0" ID="14" Mesh="" Name="ItemSlot_2" Rotation="0 -0 0" Scale="0.16572 0.16572 0.16572" Tag="" WorldPos="3.23276 1.06691 0.267085">
+                    <UserVariables>
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ItemInteraction" Value="false" />
+                        <Var Name="MaxFocusDistance" Value="-1" />
+                    </UserVariables>
+                </Area>
+                <Area Active="true" AreaType="Script" Group="0" ID="15" Mesh="" Name="ItemSlot_3" Rotation="0 -0 0" Scale="0.16572 0.16572 0.16572" Tag="" WorldPos="3.23276 1.06691 0.971687">
                     <UserVariables>
                         <Var Name="PlayerLookAtCallback" Value="" />
                         <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />

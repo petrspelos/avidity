@@ -1,14 +1,32 @@
 void OnEnter()
 {
-    AddUseItemCallback("test", "Item_1", "ItemArea", "PlaceItem", true);
+    ForeachEntity("Item_", "RegisterCollectable");
 }
 
 void PlaceItem(string item, string entity)
 {
     RemoveItem(item);
-    CreateEntityAtArea("PlacedItem_1", "arabic_carafe.ent", "ItemSlot_1", true);
-    SetPropStaticPhysics("PlacedItem_1", true);
-    CreateParticleSystemAtEntity("dust", "ps_dust_impact.ps", "ItemSlot_1", false);
+    AddLocalVarInt("NextItemNumber", 1);
+    string itemName = "PlacedItem_" + GetLocalVarInt("NextItemNumber");
+    string slotName = "ItemSlot_" + GetLocalVarInt("NextItemNumber");
+    CreateEntityAtArea(itemName, "arabic_carafe.ent", slotName, true);
+    SetPropStaticPhysics(itemName, true);
+    CreateParticleSystemAtEntity("dust", "ps_dust_impact.ps", slotName, false);
     PlayGuiSound("15_puzzle_hole.ogg", 1.0f);
     StartScreenShake(0.01f, 0.2f, 0.05f, 0.05f);
+}
+
+void RegisterCollectable(string entity)
+{
+    AddUseItemCallback("test", entity, "ItemArea", "PlaceItem", true);
+}
+
+void ForeachEntity(string prefix, string callback)
+{
+    int iterator = 1;
+    while(GetEntityExists(prefix + iterator))
+    {
+        AddTimer(prefix + iterator, 0.0f, callback);
+        iterator++;
+    }
 }
